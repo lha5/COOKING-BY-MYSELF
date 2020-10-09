@@ -1,5 +1,5 @@
 node_modules
 .idea
-.eslintrc.js
+/server/config/sessionSecretKey.js
 /server/config/dev.js
 /server/models/jwtPrivateKey.js

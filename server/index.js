@@ -1,7 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const cookieParser = require('cookie-parser');
+const session = require('express-session');
+const secretKey = require('./config/sessionSecretKey');
+const FileStore = require('session-file-store')(session);
+const flash = require('connect-flash');
 
 let app = express();
 
@@ -23,7 +26,16 @@ mongoose
 app.use(bodyParser.urlencoded({ extended: true }));
 // application/json
 app.use(bodyParser.json());
-app.use(cookieParser());
+app.use(session({
+    secret: secretKey,
+    resave: false,
+    saveUninitialized: true,
+    store: new FileStore()
+}));
+app.use(flash());
+
+const passport = require('passport');
+const LocalStrategy = require('passport-local').Strategy;
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
