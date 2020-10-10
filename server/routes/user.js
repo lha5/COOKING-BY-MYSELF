@@ -91,7 +91,7 @@ router.get('/logout', auth, (req, res) => {
             return res.json({success: false, err});
         }
 
-        return res.clearCookie('w_auth').status(200).send({
+        return res.cookie('w_auth', '').status(200).send({
             success: true
         });
     });

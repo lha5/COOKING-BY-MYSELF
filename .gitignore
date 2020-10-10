@@ -1,5 +1,5 @@
 node_modules
 .idea
-/server/config/sessionSecretKey.js
+/server/config/passport.js
 /server/config/dev.js
 /server/models/jwtPrivateKey.js
