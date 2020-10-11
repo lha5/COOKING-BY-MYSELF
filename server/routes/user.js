@@ -22,16 +22,16 @@ router.get('/auth', auth, (req, res) => {
 });
 
 router.post('/checkEmail', (req, res) => {
-    User.find({'email': req.body.email})
+    User.findOne({'email': req.body.email})
         .exec((err, usingEmail) => {
             if (err) {
                 return res.status(400).send(err);
             }
 
-            if (usingEmail.length > 0) {
-                res.status(200).json({isExist: true});
+            if (usingEmail !== null) {
+                res.status(200).json({success: false});
             } else {
-                res.status(200).json({isExist: false});
+                res.status(200).json({success: true});
             }
         });
 });

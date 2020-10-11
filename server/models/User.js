@@ -21,7 +21,7 @@ const userSchema = mongoose.Schema({
     },
     role: {
         type: Number,
-        default: 0
+        default: 3
     },
     image: {
         type: String
@@ -39,7 +39,7 @@ userSchema.pre('save', function (next) {
     // @ts-ignore
     let user = this;
 
-    if (user.idModified('password')) {
+    if (user.isModified('password')) {
 
         bcrpyt.genSalt(saltRounds, function (err, salt) {
             if (err) {return next(err);}
