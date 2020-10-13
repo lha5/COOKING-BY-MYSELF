@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
-
+const passport = require('passport');
 const { User } = require('../models/User');
 const { auth } = require('../middleware/auth');
 
 // -------------------------
-            User
+//          User
 // -------------------------
 
 router.get('/auth', auth, (req, res) => {
@@ -95,6 +95,19 @@ router.get('/logout', auth, (req, res) => {
             success: true
         });
     });
+});
+
+// -------------------------
+//        Passport
+// -------------------------
+
+router.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'], authType: 'rerequest' }));
+
+router.get('/auth/google/callback', passport.authenticate('google', {
+    failureRedirect: '/'
+}), (req, res) => {
+    res.send({success: true});
+    res.redirect('http://localhost:3000/');
 });
 
 module.exports = router;

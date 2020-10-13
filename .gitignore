@@ -1,5 +1,5 @@
 node_modules
 .idea
-/server/config/passport.js
+.env
+/server/config/squelizeConfig.json
 /server/config/dev.js
-/server/models/jwtPrivateKey.js
