@@ -17,11 +17,27 @@ module.exports = () => {
             {
                 clientID: process.env.GOOGLE_CLIENT_ID,
                 clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-                callbackURL: 'http://localhost:5000/api/user/google/callback'
+                callbackURL: 'http://localhost:5000/api/user/google/callback',
+                // passReqToCallback: true,
+                // proxy: true
             }, function (accessToken, refreshToken, profile, done) {
-                User.findOrCreate({ email: profile.email }, function (err, user) {
-                    if (err) {return done(err);}
-                    return done(null, user);
+                const userInfo = {
+                    'email': profile._json.email,
+                    'name' : profile._json.name
+                };
+
+                User.findOne({ 'email': userInfo.email }, (err, user) => {
+                    if (err) {return done.json({ success: false, err })}
+
+                    if (user) {
+                        done(null, user);
+                    } else {
+                        new User(userInfo)
+                            .save()
+                            .then((newUser) => {
+                                done(null, newUser);
+                            });
+                    }
                 });
             }
         )

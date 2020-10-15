@@ -10,6 +10,7 @@ const flash = require('connect-flash');
 const dotenv = require('dotenv').config();
 const passport = require('passport');
 const passportConfig = require('./config/passport/passport');
+const morgan = require('morgan');
 
 const app = express();
 
@@ -42,6 +43,7 @@ app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
 passportConfig();
+app.use(morgan('dev'));
 
 app.get('/', (req, res) => {
     res.send('Hello World!');

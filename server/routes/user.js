@@ -105,9 +105,14 @@ router.get('/google', passport.authenticate('google', { scope: ['profile', 'emai
 
 router.get('/google/callback', passport.authenticate('google', {
     failureRedirect: '/'
-}), (req, res) => {
-    res.send({success: true});
-    res.redirect('http://localhost:3000/');
+}), (req, res, user) => {
+    console.log('구글 로그인 성공');
+    res.send({ success: true, user }).redirect('http://localhost:3000');
+});
+
+router.get('/google/logout', (req, res) => {
+    req.logout();
+    res.send(req.user);
 });
 
 module.exports = router;
