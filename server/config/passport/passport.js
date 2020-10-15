@@ -17,12 +17,12 @@ module.exports = () => {
             {
                 clientID: process.env.GOOGLE_CLIENT_ID,
                 clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-                callbackURL: 'http://localhost:5000/auth/google/callback'
+                callbackURL: 'http://localhost:5000/api/user/google/callback'
             }, function (accessToken, refreshToken, profile, done) {
-                // User.findOne({ email: profile.email }, (err, user) => {
-                //     done(null, user);
-                // });
-                done(null, profile);
+                User.findOrCreate({ email: profile.email }, function (err, user) {
+                    if (err) {return done(err);}
+                    return done(null, user);
+                });
             }
         )
     );

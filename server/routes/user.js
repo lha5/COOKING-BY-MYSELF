@@ -101,9 +101,9 @@ router.get('/logout', auth, (req, res) => {
 //        Passport
 // -------------------------
 
-router.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'], authType: 'rerequest' }));
+router.get('/google', passport.authenticate('google', { scope: ['profile', 'email'], authType: 'rerequest' }));
 
-router.get('/auth/google/callback', passport.authenticate('google', {
+router.get('/google/callback', passport.authenticate('google', {
     failureRedirect: '/'
 }), (req, res) => {
     res.send({success: true});
