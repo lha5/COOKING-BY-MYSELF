@@ -4,7 +4,6 @@ const saltRounds = 10;
 const jwt = require('jsonwebtoken');
 const moment = require('moment');
 const dotenv = require('dotenv').config();
-const findOrCreate = require('mongoose-findorcreate');
 
 const userSchema = mongoose.Schema({
     name: {
@@ -32,10 +31,12 @@ const userSchema = mongoose.Schema({
     },
     tokenExp: {
         type: Number
+    },
+    provider: {
+        type: String,
+        default: 'local'
     }
 }, { timestamps: true });
-
-userSchema.plugin(findOrCreate);
 
 userSchema.pre('save', function (next) {
     // @ts-ignore

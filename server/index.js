@@ -3,13 +3,9 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const session = require('express-session');
 const mongoDBConfig = require('./config/key');
 const path = require('path');
-const flash = require('connect-flash');
 const dotenv = require('dotenv').config();
-const passport = require('passport');
-const passportConfig = require('./config/passport/passport');
 const morgan = require('morgan');
 
 const app = express();
@@ -33,17 +29,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // application/json
 app.use(bodyParser.json());
 app.use(cookieParser());
-app.use(session({
-    resave: true,
-    secret: process.env.COOKIE_SECRET,
-    cookie: { maxAge: 60 * 60 * 1000, httpOnly: true, secure: false },
-    saveUninitialized: false
-}));
-app.use(flash());
-app.use(passport.initialize());
-app.use(passport.session());
-passportConfig();
-app.use(morgan('dev'));
 
 app.get('/', (req, res) => {
     res.send('Hello World!');

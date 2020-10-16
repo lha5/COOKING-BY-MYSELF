@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const passport = require('passport');
 const { User } = require('../models/User');
 const { auth } = require('../middleware/auth');
 
@@ -15,9 +14,9 @@ router.get('/auth', auth, (req, res) => {
         isAuth: true,
         email: req.user.email,
         name: req.user.name,
-        lastname: req.user.lastname,
         role: req.user.role,
-        image: req.user.image
+        image: req.user.image,
+        provider: req.user.provider
     });
 });
 
@@ -97,22 +96,31 @@ router.get('/logout', auth, (req, res) => {
     });
 });
 
-// -------------------------
-//        Passport
-// -------------------------
-
-router.get('/google', passport.authenticate('google', { scope: ['profile', 'email'], authType: 'rerequest' }));
-
-router.get('/google/callback', passport.authenticate('google', {
-    failureRedirect: '/'
-}), (req, res, user) => {
-    console.log('구글 로그인 성공');
-    res.send({ success: true, user }).redirect('http://localhost:3000');
-});
-
-router.get('/google/logout', (req, res) => {
-    req.logout();
-    res.send(req.user);
+router.post('/kakao', (req, res) => {
+    const userInfo = {
+        'email': req.body.kakaoUser.current.kakao_account.email,
+        'name': req.body.kakaoUser.current.properties.nickname,
+        'provider': 'kakao',
+        'token': req.body.token.current
+    };
+    User.findOne({ 'email' : userInfo.email }, (err, user) => {
+        if (!user) {
+            const newUser = new User(userInfo);
+            newUser.save((err, doc) => {
+                if (err) {
+                    return res.json({success: false, err});
+                }
+                res.status(200).json({
+                    loginSuccess: true,
+                    userId: newUser._id
+                });
+            });
+        }
+        return res.status(200).json({
+            loginSuccess: true,
+            userId: user._id
+        });
+    });
 });
 
 module.exports = router;
