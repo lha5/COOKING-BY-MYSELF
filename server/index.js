@@ -36,6 +36,9 @@ app.get('/', (req, res) => {
 
 // using API
 app.use('/api/user', require('./routes/user'));
+app.use('/api/recipe', require('./routes/recipe'));
+
+app.use('/upload', express.static('upload'));
 
 // Serve static assets if in production
 if (process.env.NODE_ENV === 'production') {
