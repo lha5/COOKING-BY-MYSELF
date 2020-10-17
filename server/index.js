@@ -37,6 +37,7 @@ app.get('/', (req, res) => {
 // using API
 app.use('/api/user', require('./routes/user'));
 app.use('/api/recipe', require('./routes/recipe'));
+// app.use('/api/product', require('./routes/product'));
 
 app.use('/upload', express.static('upload'));
 

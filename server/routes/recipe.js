@@ -51,7 +51,8 @@ router.post('/recipes', (req, res) => {
     if (term) {
         Recipe
             .find(findArgs)
-            .find({ $text: { $search: term }})
+            .find()
+            .or([{ 'title': { $regex: term, $options: 'i' } }, { 'content': { $regex: term, $options: 'i' } }])
             .sort({ updatedAt : -1 })
             .populate('writer')
             .skip(skip)
@@ -72,6 +73,18 @@ router.post('/recipes', (req, res) => {
                 return res.status(200).json({ success: true, recipesInfo, postSize: recipesInfo.length });
             });
     }
+});
+
+router.get('/recipe_by_id', (req, res) => {
+    let type = req.query.type;
+    let recipeId = req.query.id;
+
+    Recipe.find({ '_id': recipeId })
+        .populate('writer')
+        .exec((err, recipe) => {
+            if (err) {return res.status(400).json({ success: false, err });}
+            return res.status(200).send({ success: true, recipe });
+        });
 });
 
 module.exports = router;
