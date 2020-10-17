@@ -14,7 +14,8 @@ const recipeSchema = mongoose.Schema({
         type: String
     },
     category: {
-        type: Number
+        type: Number,
+        default: 1
     },
     images: {
         type: Array,
@@ -25,6 +26,16 @@ const recipeSchema = mongoose.Schema({
         default: 0
     }
 }, { timestamps: true });
+
+recipeSchema.index({
+    title: 'text',
+    content: 'text'
+}, {
+    weight: {
+        title: 5,
+        content: 3
+    }
+});
 
 const Recipe = mongoose.model('Recipe', recipeSchema);
 
