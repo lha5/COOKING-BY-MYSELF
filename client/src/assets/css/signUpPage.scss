@@ -1,0 +1,56 @@
+@import 'breakPoint';
+@import 'palette.scss';
+@import 'buttons';
+
+.signUpForm {
+  text-align: center;
+
+  .pageTitle {
+    margin: 20px auto 0 auto;
+    padding: 25px 25px 0 25px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: $brownColor;
+  }
+
+  form {
+    margin: 5px auto;
+    padding: 25px;
+
+    .eachSection {
+      width: 500px;
+      margin: 10px auto;
+      padding: 10px;
+
+      .labelContainer {
+        width: 50%;
+        margin: 5px auto 0 auto;
+        padding: 5px;
+        text-align: left;
+      }
+
+      input {
+        width: 50%;
+        font-size: 20px;
+        padding: 5px;
+        border: 1px solid $brownColor;
+        border-radius: 5px;
+        margin-bottom: 0;
+      }
+
+      .formError {
+        color: crimson;
+        width: fit-content;
+        margin: 5px auto;
+      }
+    }
+
+    .signUpButton {
+      @include applyButton;
+      background-color: $pinkColor;
+      font-size: 1.5rem;
+      width: 200px;
+      margin: 35px auto 10px auto;
+    }
+  }
+}

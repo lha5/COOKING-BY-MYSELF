@@ -1,0 +1,135 @@
+@import 'breakPoint';
+@import 'palette.scss';
+@import 'buttons.scss';
+
+div.recipeList {
+  width: 70%;
+  margin: 25px auto;
+  padding: 25px;
+  text-align: center;
+
+  .pageTitle {
+    font-size: 1.5rem;
+    margin: 20px auto;
+  }
+
+  #pageButton {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+
+    span {
+      background-color: $pinkColor;
+      margin: 0 auto;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      line-height: 60px; /* 높이(height)와 동일하게 */
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      color: $brownColor;
+      display: inline-block;
+    }
+
+    span:hover {
+      cursor: pointer;
+    }
+  }
+  .listFilter {
+    text-align: right;
+    padding: 25px 0;
+
+    .filterCategory {
+      padding: 7px 0;
+
+      span {
+        padding: 7px 0;
+
+        input[type='checkbox'] {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  .listSearch {
+    text-align: right;
+    padding: 0 0 25px 0;
+
+    #searchInput {
+      font-size: 1.1rem;
+      padding: 5px 7px;
+    }
+
+    #searchInput:focus {
+      outline: none;
+    }
+
+    #searchInput::-ms-clear, #searchInput::-ms-reveal {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+
+    #searchInput::-webkit-search-decoration,
+    #searchInput::-webkit-search-cancel-button,
+    #searchInput::-webkit-search-results-button,
+    #searchInput::-webkit-search-results-decoration {
+      display: none;
+    }
+  }
+
+  .pageList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+
+    .recipeContainer {
+      border: 1px solid $grayLineColor;
+
+      .recipePicture {
+        text-align: center;
+        overflow: hidden;
+        width: 100%;
+        height: 150px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .recipeTitle {
+        padding: 10px;
+        text-align: center;
+        font-size: 1.2rem;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .recipeInfo {
+        padding: 10px;
+        text-align: center;
+
+        span:nth-child(1) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .moreRecipes {
+    text-align: center;
+    margin: 25px auto;
+    width: 20%;
+    font-size: 1.2rem;
+  }
+  .moreRecipes:hover {
+    cursor: pointer;
+  }
+}

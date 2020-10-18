@@ -1,10 +1,13 @@
 import React from 'react';
 
+import '../../../assets/css/landingPage.scss';
+
 function LandingPage(props) {
     return (
-        <div>
-            메인 랜딩 페이지
-        </div>
+        <section>
+            <div className="mainPage">
+            </div>
+        </section>
     );
 }
 

@@ -1,0 +1,31 @@
+@import 'breakPoint';
+@import 'palette.scss';
+
+@mixin applyButton {
+  cursor: pointer;
+  border: none;
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: $yellowColor;
+  color: $brownColor;
+  font-family: 'TmoneyRoundWindRegular', 'sans-serif';
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+@mixin goSignUpButton {
+  cursor: pointer;
+  border: none;
+  width: auto;
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 50px;
+  background-color: $pinkColor;
+  color: $brownColor;
+  font-family: 'TmoneyRoundWindRegular', 'sans-serif';
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}

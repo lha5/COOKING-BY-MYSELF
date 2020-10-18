@@ -1,0 +1,25 @@
+@import 'breakPoint';
+@import 'palette.scss';
+@import 'buttons';
+
+.login {
+  @include applyButton;
+  font-size: 1.5rem;
+  width: 200px;
+  margin: 35px auto 10px auto;
+}
+
+.signUpSection {
+  width: 40%;
+  margin: 30px auto;
+  padding: 25px;
+
+  .guideTitle {
+    font-size: 1.2rem;
+    margin: 15px auto;
+  }
+
+  .goSignUp {
+    @include goSignUpButton;
+  }
+}

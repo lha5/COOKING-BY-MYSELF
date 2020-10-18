@@ -1,0 +1,9 @@
+@import "breakPoint";
+@import "palette";
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid $grayLineColor;
+  font-size: 1.2rem;
+}

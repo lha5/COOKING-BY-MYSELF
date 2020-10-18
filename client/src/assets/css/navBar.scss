@@ -1,0 +1,77 @@
+@import 'breakPoint';
+@import 'palette.scss';
+@import 'buttons.scss';
+
+header {
+  border-bottom: 1px solid $grayLineColor;
+  @include flexbox;
+  @include justify-content(space-between);
+  @include align-items(center);
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 5px 50px;
+
+  @include tablet {
+    padding: 7px 25px;
+  }
+
+  @include mobile {
+    padding: 50px;
+  }
+
+  .logoContainer {
+    padding: 5px;
+    width: 110px;
+    transition: font-size .2s;
+
+    @include tablet {
+      transition: font-size .2s;
+      width: 200px;
+    }
+
+    @include mobile {
+      transition: font-size .2s;
+      width: 100%;
+    }
+  }
+
+  nav {
+    //border: 1px solid magenta;
+    text-align: center;
+    padding: 5px;
+
+    ul {
+      //border: 1px solid lime;
+      @include flexbox;
+      flex-direction: row;
+      justify-self: center;
+      list-style: none;
+      margin: 0;
+      padding: 10px;
+      font-size: 1.5rem;
+
+      li {
+        //border: 1px solid cyan;
+        margin-right: 17px;
+        margin-left: 17px;
+        padding-left: 0.3rem;
+        letter-spacing: 0.3rem;
+      }
+    }
+  }
+
+  .userMenu {
+    justify-content: center;
+
+    .login {
+      @include applyButton;
+      margin: 0;
+    }
+
+    .login:focus {
+      cursor: pointer;
+      outline: none;
+    }
+  }
+}

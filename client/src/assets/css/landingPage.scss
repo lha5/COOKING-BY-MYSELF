@@ -1,0 +1,12 @@
+@import 'breakPoint';
+@import 'palette.scss';
+
+section {
+  .mainPage {
+    background-image: url("../images/landing_page.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+}

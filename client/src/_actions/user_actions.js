@@ -9,9 +9,9 @@ import {
 
 import { USER_SERVER } from '../components/Config.js';
 
-export function checkEmail(dataToSubmit) {
-    const request = axios.post(`${USER_SERVER}/checkEmail`,dataToSubmit)
-        .then(response => response.data);
+export function checkEmail(value) {
+    const request = axios.post(`${USER_SERVER}/checkEmail`, value)
+        .then(response => response.data.success);
 
     return {
         type: CHECK_EMAIL,
@@ -19,8 +19,8 @@ export function checkEmail(dataToSubmit) {
     }
 }
 
-export function signupUser(dataToSubmit){
-    const request = axios.post(`${USER_SERVER}/signup`,dataToSubmit)
+export function signupUser(dataToSubmit) {
+    const request = axios.post(`${USER_SERVER}/signup`, dataToSubmit)
         .then(response => response.data);
 
     return {
@@ -29,8 +29,8 @@ export function signupUser(dataToSubmit){
     }
 }
 
-export function signinUser(dataToSubmit){
-    const request = axios.post(`${USER_SERVER}/signin`,dataToSubmit)
+export function signinUser(dataToSubmit) {
+    const request = axios.post(`${USER_SERVER}/signin`, dataToSubmit)
         .then(response => response.data);
 
     return {
@@ -39,7 +39,7 @@ export function signinUser(dataToSubmit){
     }
 }
 
-export function auth(){
+export function auth() {
     const request = axios.get(`${USER_SERVER}/auth`)
         .then(response => response.data);
 
@@ -49,9 +49,9 @@ export function auth(){
     }
 }
 
-export function logoutUser(){
+export function logoutUser() {
     const request = axios.get(`${USER_SERVER}/logout`)
-        .then(response => response.data);
+        .then(response => response.status);
 
     return {
         type: LOGOUT_USER,

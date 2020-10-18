@@ -10,11 +10,11 @@ import {
 export default function(state={}, action) {
     switch(action.type){
         case SIGNUP_USER:
-            return { ...state, signup: action.payload }
+            return { ...state, success: action.payload }
         case CHECK_EMAIL:
-            return { ...state, result: action.payload }
+            return { ...state, success: action.payload }
         case SIGNIN_USER:
-            return { ...state, signinSucces: action.payload }
+            return { ...state, loginSuccess: action.payload }
         case AUTH_USER:
             return { ...state, userData: action.payload }
         case LOGOUT_USER:

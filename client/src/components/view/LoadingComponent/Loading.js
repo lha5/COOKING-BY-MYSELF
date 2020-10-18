@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Footer(props) {
+function Loading(props) {
     return (
         <div>
-            Footer
+            로딩 중
         </div>
     );
 }
 
-export default Footer;
+export default Loading;
