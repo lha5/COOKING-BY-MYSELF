@@ -10,7 +10,7 @@ import {
 import { USER_SERVER } from '../components/Config.js';
 
 export function checkEmail(value) {
-    const request = axios.post(`${USER_SERVER}/checkEmail`, value)
+    const request = axios.post(`${USER_SERVER}/checkEmailDup`, value)
         .then(response => response.data.success);
 
     return {
