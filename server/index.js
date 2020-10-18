@@ -35,12 +35,8 @@ app.get('/', (req, res) => {
 });
 
 // using API
-app.use('/api/user', require('./routes/user'), function (req, res) {
-    console.log('쿠키 확인 로그');
-    console.log(req.cookies);
-});
+app.use('/api/user', require('./routes/user'));
 app.use('/api/recipe', require('./routes/recipe'));
-// app.use('/api/product', require('./routes/product'));
 
 app.use('/upload', express.static('upload'));
 
@@ -57,7 +53,7 @@ if (process.env.NODE_ENV === 'production') {
     });
 }
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
+    console.log('CBM server is running...');
 });

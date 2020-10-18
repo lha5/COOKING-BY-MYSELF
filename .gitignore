@@ -1,6 +1,5 @@
 node_modules
 .idea
 .env
-/upload
 /server/config/squelizeConfig.json
 /server/config/dev.js

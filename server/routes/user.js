@@ -110,7 +110,7 @@ router.post('/signin', (req, res) => {
                     message: 'Wrong password'
                 });
             }
-            sendEmail(req.body.email);
+
             user.generateToken((err, user) => {
                 if (err) {
                     return res.status(400).send(err);
