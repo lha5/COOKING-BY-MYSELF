@@ -54,6 +54,6 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0",
-    "http-proxy-middleware": "^1.0.5"
+    "http-proxy-middleware": "^1.0.6"
   }
 }
