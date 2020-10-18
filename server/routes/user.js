@@ -54,7 +54,7 @@ router.post('/signin', (req, res) => {
         if (!user) {
             return res.json({
                 loginSuccess: false,
-                message: "Auth failed, email is not founded."
+                message: 'Auth failed, email is not founded.'
             });
         }
 
@@ -62,7 +62,7 @@ router.post('/signin', (req, res) => {
             if (!isMatch) {
                 return res.json({
                     loginSuccess: false,
-                    message: "Wrong password"
+                    message: 'Wrong password'
                 });
             }
 
@@ -71,9 +71,9 @@ router.post('/signin', (req, res) => {
                     return res.status(400).send(err);
                 }
 
-                res.cookie("w_authExp", user.tokenExp, {httpOnly: true});
+                res.cookie('w_authExp', user.tokenExp, {httpOnly: true});
                 res
-                    .cookie("w_auth", user.token, {httpOnly: true})
+                    .cookie('w_auth', user.token, {httpOnly: true})
                     .status(200)
                     .json({
                         loginSuccess: true,
@@ -100,8 +100,7 @@ router.post('/kakao', (req, res) => {
     const userInfo = {
         'email': req.body.kakaoUser.current.kakao_account.email,
         'name': req.body.kakaoUser.current.properties.nickname,
-        'provider': 'kakao',
-        'token': req.body.token.current
+        'provider': 1
     };
     User.findOne({ 'email' : userInfo.email }, (err, user) => {
         if (!user) {
@@ -110,15 +109,35 @@ router.post('/kakao', (req, res) => {
                 if (err) {
                     return res.json({success: false, err});
                 }
-                res.status(200).json({
-                    loginSuccess: true,
-                    userId: newUser._id
+                doc.generateToken((err, kUser) => {
+                    if (err) {
+                        return res.status(400).send(err);
+                    }
+
+                    res
+                        .status(200)
+                        .json({
+                            loginSuccess: true,
+                            userId: kUser._id,
+                            w_auth: kUser.token,
+                            w_authExp: kUser.tokenExp
+                        });
                 });
             });
         }
-        return res.status(200).json({
-            loginSuccess: true,
-            userId: user._id
+        user.generateToken((err, kUser) => {
+            if (err) {
+                return res.status(400).send(err);
+            }
+
+            res
+                .status(200)
+                .send({
+                    loginSuccess: true,
+                    userId: kUser._id,
+                    w_auth: kUser.token,
+                    w_authExp: kUser.tokenExp
+                });
         });
     });
 });

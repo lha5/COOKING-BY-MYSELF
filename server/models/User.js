@@ -33,8 +33,8 @@ const userSchema = mongoose.Schema({
         type: Number
     },
     provider: {
-        type: String,
-        default: 'local'
+        type: Number,
+        default: 0
     }
 }, { timestamps: true });
 

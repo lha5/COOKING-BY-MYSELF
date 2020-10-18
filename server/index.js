@@ -35,7 +35,10 @@ app.get('/', (req, res) => {
 });
 
 // using API
-app.use('/api/user', require('./routes/user'));
+app.use('/api/user', require('./routes/user'), function (req, res) {
+    console.log('쿠키 확인 로그');
+    console.log(req.cookies);
+});
 app.use('/api/recipe', require('./routes/recipe'));
 // app.use('/api/product', require('./routes/product'));
 
