@@ -1,0 +1,2 @@
+/api/* https://cooking-by-myself.herokuapp.com/:splat 200
+/*  /index.html  200
