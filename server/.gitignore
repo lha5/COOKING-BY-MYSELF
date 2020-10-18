@@ -1,0 +1,4 @@
+/server/node_modules
+.idea
+.env
+/server/config/dev.js

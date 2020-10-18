@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0ce743e8-ba2c-4700-8486-7aa14f3f85ed" name="Default Changelist" comment="commit again" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/lha5/Boilerplate.git" />
+      </set>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1icxh8lAB48tqsBuYfdreHp5rsV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/assets/images" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\learning React.js\CBM\client\src\assets\images" />
+      <recent name="D:\learning React.js\CBM\client\src\assets\fonts" />
+      <recent name="D:\learning React.js\CBM\client\src\components\asset\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\learning React.js\CBM" />
+      <recent name="D:\learning React.js\CBM\client\src\assets\images" />
+      <recent name="D:\learning React.js\CBM\" />
+      <recent name="D:\learning React.js\CBM\server\config\passport" />
+      <recent name="D:\learning React.js\CBM\server\config" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="React Dubug" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ce743e8-ba2c-4700-8486-7aa14f3f85ed" name="Default Changelist" comment="" />
+      <created>1602220797092</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602220797092</updated>
+      <workItem from="1602220798186" duration="16296000" />
+      <workItem from="1602281804611" duration="3453000" />
+      <workItem from="1602297702702" duration="3744000" />
+      <workItem from="1602301456204" duration="980000" />
+      <workItem from="1602303002919" duration="23760000" />
+      <workItem from="1602369579552" duration="1249000" />
+      <workItem from="1602378949615" duration="27050000" />
+      <workItem from="1602460197060" duration="6911000" />
+      <workItem from="1602467118068" duration="19223000" />
+      <workItem from="1602497799165" duration="12853000" />
+      <workItem from="1602536504250" duration="10094000" />
+      <workItem from="1602553902008" duration="65000" />
+      <workItem from="1602716273509" duration="7398000" />
+      <workItem from="1602724137199" duration="56000" />
+      <workItem from="1602724200382" duration="240000" />
+      <workItem from="1602724448445" duration="19296000" />
+      <workItem from="1602750906935" duration="3362000" />
+      <workItem from="1602756241685" duration="5716000" />
+      <workItem from="1602809279963" duration="3407000" />
+      <workItem from="1602824717163" duration="10705000" />
+      <workItem from="1602835911109" duration="14250000" />
+      <workItem from="1602888790312" duration="2577000" />
+      <workItem from="1602892191547" duration="40714000" />
+      <workItem from="1602971473246" duration="25740000" />
+      <workItem from="1603016007064" duration="7105000" />
+    </task>
+    <task id="LOCAL-00001" summary="commit again">
+      <created>1602227848264</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602227848264</updated>
+    </task>
+    <task id="LOCAL-00002" summary="NavBar, Footer, LandingPage 스타일링">
+      <created>1602330957778</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602330957778</updated>
+    </task>
+    <task id="LOCAL-00003" summary="로그인 동작 구현">
+      <created>1602397915038</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602397915038</updated>
+    </task>
+    <task id="LOCAL-00004" summary="로그인 동작 구현">
+      <created>1602402157032</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602402157032</updated>
+    </task>
+    <task id="LOCAL-00005" summary="로그아웃 기능 구현">
+      <created>1602405995335</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602405995335</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Google OAuth2 적용 중">
+      <created>1602553673388</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602553673388</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Google OAuth2 적용 중2">
+      <created>1602553725153</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602553725153</updated>
+    </task>
+    <task id="LOCAL-00008" summary="OAuth2 설정 중">
+      <created>1602725923099</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602725923099</updated>
+    </task>
+    <task id="LOCAL-00009" summary="구글 로그인 진행 중">
+      <created>1602762429795</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1602762429795</updated>
+    </task>
+    <task id="LOCAL-00010" summary="카카오계정으로 로그인 구현 중">
+      <created>1602851468378</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602851468378</updated>
+    </task>
+    <task id="LOCAL-00011" summary="레시피 업로드 페이지 및 코드 작성">
+      <created>1602910106325</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1602910106325</updated>
+    </task>
+    <task id="LOCAL-00012" summary="레시피 목록 및 필터링/검색 기능 추가(+스타일링)">
+      <created>1602927199336</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1602927199336</updated>
+    </task>
+    <task id="LOCAL-00013" summary="레시피 작성 페이지 스타일링">
+      <created>1602978367062</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1602978367063</updated>
+    </task>
+    <task id="LOCAL-00014" summary="카카오 로그인 구현">
+      <created>1602988864397</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1602988864397</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fixed commit">
+      <created>1602990464547</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1602990464547</updated>
+    </task>
+    <task id="LOCAL-00016" summary="nodemailer 설정 중">
+      <created>1603022826544</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1603022826544</updated>
+    </task>
+    <task id="LOCAL-00017" summary="테스트 배포 설정 중">
+      <created>1603026231890</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1603026231890</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit again" />
+    <MESSAGE value="NavBar, Footer, LandingPage 스타일링" />
+    <MESSAGE value="로그인 동작 구현" />
+    <MESSAGE value="로그아웃 기능 구현" />
+    <MESSAGE value="Google OAuth2 적용 중" />
+    <MESSAGE value="Google OAuth2 적용 중2" />
+    <MESSAGE value="OAuth2 설정 중" />
+    <MESSAGE value="구글 로그인 진행 중" />
+    <MESSAGE value="카카오계정으로 로그인 구현 중" />
+    <MESSAGE value="레시피 업로드 페이지 및 코드 작성" />
+    <MESSAGE value="레시피 목록 및 필터링/검색 기능 추가(+스타일링)" />
+    <MESSAGE value="레시피 작성 페이지 스타일링" />
+    <MESSAGE value="카카오 로그인 구현" />
+    <MESSAGE value="fixed commit" />
+    <MESSAGE value="nodemailer 설정 중" />
+    <MESSAGE value="테스트 배포 설정 중" />
+    <option name="LAST_COMMIT_MESSAGE" value="테스트 배포 설정 중" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="160" key="#Plugins" timestamp="1602467102159">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="160" key="#Plugins/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602467102159" />
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602304465040">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602304465040" />
+    <state x="689" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603025532966">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1366.303.1366.728@0.0.1920.1040" timestamp="1603025532966" />
+    <state x="689" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602467037285" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603025904442">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1366.303.1366.728@0.0.1920.1040" timestamp="1603025904442" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602838208156" />
+    <state x="625" y="296" key="EditFileWatcherDialog" timestamp="1602312385974">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="625" y="296" key="EditFileWatcherDialog/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602312385974" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1602283481068">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602283481068" />
+    <state width="1899" height="348" key="GridCell.Tab.0.bottom" timestamp="1602553740978">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602553740978" />
+    <state width="1899" height="348" key="GridCell.Tab.0.center" timestamp="1602553740978">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602553740978" />
+    <state width="1899" height="348" key="GridCell.Tab.0.left" timestamp="1602553740978">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602553740978" />
+    <state width="1899" height="348" key="GridCell.Tab.0.right" timestamp="1602553740978">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602553740978" />
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1602553740979">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602553740979" />
+    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1602553740979">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602553740979" />
+    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1602553740979">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602553740979" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1602553740979">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602553740979" />
+    <state width="1899" height="348" key="GridCell.Tab.2.bottom" timestamp="1602553740979">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602553740979" />
+    <state width="1899" height="348" key="GridCell.Tab.2.center" timestamp="1602553740979">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.2.center/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602553740979" />
+    <state width="1899" height="348" key="GridCell.Tab.2.left" timestamp="1602553740979">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.2.left/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602553740979" />
+    <state width="1899" height="348" key="GridCell.Tab.2.right" timestamp="1602553740979">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.2.right/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602553740979" />
+    <state width="1899" height="348" key="GridCell.Tab.3.bottom" timestamp="1602553740979">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602553740979" />
+    <state width="1899" height="348" key="GridCell.Tab.3.center" timestamp="1602553740979">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.3.center/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602553740979" />
+    <state width="1899" height="348" key="GridCell.Tab.3.left" timestamp="1602553740979">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.3.left/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602553740979" />
+    <state width="1899" height="348" key="GridCell.Tab.3.right" timestamp="1602553740979">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.3.right/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602553740979" />
+    <state x="463" y="221" key="SettingsEditor" timestamp="1602750918124">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="221" key="SettingsEditor/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602750918124" />
+    <state x="713" y="223" key="VCS.ChangeListViewerDialog" timestamp="1602221988597">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="713" y="223" key="VCS.ChangeListViewerDialog/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602221988597" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603026233542">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1366.303.1366.728@0.0.1920.1040" timestamp="1603026233542" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602851470165" />
+    <state x="764" y="380" key="git4idea.rebase.GitRebaseDialog" timestamp="1602222000357">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="764" y="380" key="git4idea.rebase.GitRebaseDialog/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602222000357" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1602235820345">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602235820345" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602978689265">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1366.303.1366.728@0.0.1920.1040" timestamp="1602978689265" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1366.304.1366.728@0.0.1920.1040" timestamp="1602836084456" />
+  </component>
+</project>

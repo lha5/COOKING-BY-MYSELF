@@ -1,5 +1,0 @@
-node_modules
-.idea
-.env
-/server/config/squelizeConfig.json
-/server/config/dev.js
