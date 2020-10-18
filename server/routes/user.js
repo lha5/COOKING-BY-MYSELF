@@ -20,7 +20,7 @@ router.get('/auth', auth, (req, res) => {
     });
 });
 
-router.post('/checkEmail', (req, res) => {
+router.post('/checkEmailDup', (req, res) => {
     User.findOne({'email': req.body.email})
         .exec((err, usingEmail) => {
             if (err) {
