@@ -6,7 +6,7 @@ services:
     -docker
 
 before_install:
-    - docker build -t lha5/cbm -f ./client/Dockerefile.dev ./client
+    - docker build -t lha5/cbm -f ./client/Dockerfile.dev ./client
 
 script:
     - docker run -e CI=true lha5/cbm npm run test
