@@ -30,7 +30,6 @@ function RecipePage(props) {
         axios.post('/api/recipe/recipes', variables)
             .then(response => {
                 if (response.data.success) {
-                    console.log(response.data.recipesInfo);
                     if (variables.loadMore) {
                         setRecipes([...recipes, ...response.data.recipesInfo]);
                     } else {
