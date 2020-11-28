@@ -3,15 +3,15 @@ import { Route, Switch } from 'react-router-dom';
 
 import Auth from '../hoc/auth';
 
-import Loading from './view/LoadingComponent/Loading';
-import NavBar from './view/NavBar/NavBar';
-import LandingPage from './view/LandingPage/LandingPage';
-import SignUpPage from './view/SignUpPage/SignUpPage';
-import SignInPage from './view/SignInPage/SignInPage';
-import RecipePage from './view/RecipePage/RecipePage';
-import UploadRecipePage from './view/RecipePage/UploadRecipePage';
-import RecipeDetailPage from './view/RecipePage/RecipeDetailPage';
-import FooterSection from './view/Footer/FooterSection';
+import Loading from './views/LoadingComponent/Loading';
+import NavBar from './views/NavBar/NavBar';
+import LandingPage from './views/LandingPage/LandingPage';
+import SignUpPage from './views/SignUpPage/SignUpPage';
+import SignInPage from './views/SignInPage/SignInPage';
+import RecipePage from './views/RecipePage/RecipePage';
+import UploadRecipePage from './views/RecipePage/UploadRecipePage';
+import RecipeDetailPage from './views/RecipePage/RecipeDetailPage';
+import FooterSection from './views/Footer/FooterSection';
 
 function App() {
   return (
