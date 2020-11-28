@@ -2,50 +2,6 @@ const express = require('express');
 const router = express.Router();
 const { User } = require('../models/User');
 const { auth } = require('../middleware/auth');
-const dotenv = require('dotenv').config();
-const nodemailer = require('nodemailer');
-
-// for verify email
-let sendEmail = (emailTo) => {
-    let transporter = nodemailer.createTransport(
-        {
-            host: 'smtp.naver.com',
-            port: 465,
-            secure: true,
-            auth: {
-                user: process.env.NODEMAILER_AUTH_USER,
-                pass: process.env.NODEMAILER_AUTH_PASS
-            }
-        }
-    );
-
-    let message = {
-        to: emailTo,
-        subject: '[CBM] 가입 인증을 완료해주세요.' + Date.now(),
-        text: 'test',
-        html: '<p>이메일 가입 인증 테스트</p>'
-    };
-
-    // verify connection configuration
-    transporter.verify((error, success) => {
-        if (error) {
-            console.log('[Nodemailer] cannot verified')
-            console.log(error);
-        } else {
-            console.log("Server is ready to take our messages");
-        }
-    });
-
-    transporter.sendMail(message, (error, info) => {
-        if (error) {
-            console.log('[Nodemailer] error occurred');
-            console.log(error.message);
-            return process.exit(1);
-        }
-        console.log('[Nodemailer] Message sent successfully');
-        console.log(nodemailer.getTestMessageUrl(info));
-    });
-};
 
 // -------------------------
 //          User
@@ -60,8 +16,7 @@ router.get('/auth', auth, (req, res) => {
         name: req.user.name,
         role: req.user.role,
         image: req.user.image,
-        provider: req.user.provider,
-        verified: req.user.verified
+        provider: req.user.provider
     });
 });
 
@@ -87,7 +42,7 @@ router.post('/signup', (req, res) => {
         if (err) {
             return res.json({success: false, err});
         }
-        // sendEmail(req.body.email);
+
         return res.status(200).json({
             success: true
         });
@@ -145,8 +100,7 @@ router.post('/kakao', (req, res) => {
     const userInfo = {
         'email': req.body.kakaoUser.current.kakao_account.email,
         'name': req.body.kakaoUser.current.properties.nickname,
-        'provider': 1,
-        'authChecked': true
+        'provider': 1
     };
     User.findOne({ 'email' : userInfo.email }, (err, user) => {
         if (!user) {
